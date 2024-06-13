@@ -24,10 +24,12 @@ public class BuilderMain {
         car.getTripComputer().showFuelLevel();
         car.getTripComputer().showStatus();
 
-        director.constructSUV(builder);
-        Car suvCar = builder.getResult();
-        suvCar.getTripComputer().showFuelLevel();
-        suvCar.getTripComputer().showStatus();
+        CarBuilder suvBuilder = new CarBuilder();
+        director.constructSUV(suvBuilder);
+        Car suvCar = suvBuilder.getResult();
+        System.out.println(suvCar.getEngine().isStarted());
+        // suvCar.getTripComputer().showFuelLevel();
+        // suvCar.getTripComputer().showStatus();
 
 
         CarManualBuilder manualBuilder = new CarManualBuilder();
