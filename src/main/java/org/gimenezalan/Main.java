@@ -1,6 +1,7 @@
 package org.gimenezalan;
 
 import org.gimenezalan.builder.BuilderMain;
+import org.gimenezalan.factoryMethod.FactoryMethodMain;
 import org.gimenezalan.singleton.SingletonMain;
 
 public class Main {
@@ -10,7 +11,11 @@ public class Main {
         // singletonMain.executeSingletonMain();
 
         // BUILDER
-        BuilderMain builderMain = new BuilderMain();
-        builderMain.executeBuilderMain();
+        // BuilderMain builderMain = new BuilderMain();
+        // builderMain.executeBuilderMain();
+
+        // FACTORY METHOD
+        FactoryMethodMain factoryMethodMain = new FactoryMethodMain();
+        factoryMethodMain.executeFactoryMethodMain();
     }
 }
