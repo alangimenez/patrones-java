@@ -3,6 +3,7 @@ package org.gimenezalan;
 import org.gimenezalan.abstractFactory.AbstractFactoryMain;
 import org.gimenezalan.builder.BuilderMain;
 import org.gimenezalan.factoryMethod.FactoryMethodMain;
+import org.gimenezalan.prototype.PrototypeMain;
 import org.gimenezalan.singleton.SingletonMain;
 
 public class Main {
@@ -20,7 +21,11 @@ public class Main {
         // factoryMethodMain.executeFactoryMethodMain();
 
         // ABSTRACT FACTORY
-        AbstractFactoryMain abstractFactoryMain = new AbstractFactoryMain();
-        abstractFactoryMain.executeAbstractFactory();
+        // AbstractFactoryMain abstractFactoryMain = new AbstractFactoryMain();
+        // abstractFactoryMain.executeAbstractFactory();
+
+        // PROTOTYPES
+        PrototypeMain prototypeMain = new PrototypeMain();
+        prototypeMain.executePrototypeMain();
     }
 }
